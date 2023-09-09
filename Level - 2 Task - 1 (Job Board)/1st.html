@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Work+Sans:wght@100;200&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    <!-- swiper -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> 
+
+    <title>Responsive job portal website</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">JobSeekr</a></h2>
+        <div class="navbar-menu">
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#Testimonial">Testimonial</a>
+            <a href="#blog">Blogs</a>
+            <a href="#">Sign In</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header>
+        <h1 class="body-title">
+            FIND YOUR <br> <span>PERFECT JOB</span> <br> EASILY
+        </h1>
+    </header>
+    
+    <!-- search -->
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <input class="search-input" type="text" placeholder="Job title or keywords">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- filter box -->
+    <div class="filter-box">
+        <div class="filter-dropdown">
+            <select class="filter-select" id="job-level" name="job-level">
+                <option>Job Level</option>
+                <option>Entry</option>
+                <option>Mid-Senior</option>
+                <option>Director</option>
+            </select>
+            <select class="filter-select" id="job-function" name="job-function">
+                <option>Job Function</option>
+                <option>IT</option>              
+                <option>Management</option>
+                <option>Education</option>
+            </select>
+            <select class="filter-select" id="employment" name="employment">
+                <option>Employment Type</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Full Time</option>
+            </select>
+            <select class="filter-select" id="location" name="location">
+                <option>Location</option>
+                <option>Remote</option>
+                <option>US</option>
+                <option>UK</option>
+            </select>
+            <select class="filter-select" id="education" name="education">
+                <option>Education</option>
+                <option>High School</option>
+                <option>Bachelor's degree</option>
+                <option>Master's degree</option>
+            </select>
+        </div>
+        <div class="filter-chosen">
+            <div class="chosen-card">
+                Remote <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Full time <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Financial Tech <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Entry Level <i class="fas fa-times-circle"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--job listng -->
+    <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="https://upload.wikimedia.org/wikipedia/commons/4/48/EBay_logo.png">
+                <div class="job-detail">
+                    <h4>eday</h4>
+                    <h3>Business Development</h3>
+                    <p>Loren dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="Job-label">  
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago 
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="https://img.freepik.com/premium-vector/tik-tok-logo_578229-290.jpg">
+                <div class="job-detail">
+                    <h4>Tiktok</h4>
+                    <h3>Digital marketing</h3>
+                    <p>Loren dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="Job-label">    
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted"> 
+                Posted 2 min ago 
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="https://thumbs.dreamstime.com/b/youtube-logo-white-flat-background-youtube-logo-white-background-125277334.jpg">
+                <div class="job-detail">
+                    <h4>Youtube</h4>
+                    <h3>UI UX Designer</h3>
+                    <p>Loren ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="Job-label">   
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted an hour ago 
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg">
+                <div class="job-detail">
+                    <h4>amazon</h4>
+                    <h3>Software Engineer</h3>
+                    <p>Loren ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="Job-label">  
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago 
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="https://1000logos.net/wp-content/uploads/2018/02/Font-Tesla-logo.jpg">
+                <div class="job-detail">
+                    <h4>Tesla</h4>
+                    <h3>Software Engineer</h3>
+                    <p>Loren ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="Job-label">   
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">python</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago 
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="https://images.samsung.com/is/image/samsung/assets/in/about-us/brand/logo/mo/360_197_1.png?$FB_TYPE_B_PNG$">
+             <div class="job-detail">
+                    <h4>Samsung</h4>
+                    <h3>Software Engineer</h3>
+                    <p>Loren ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="Job-label">   
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Java</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago 
+            </div>
+        </div>
+
+        
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="https://static.vecteezy.com/system/resources/previews/020/336/451/original/infosys-logo-infosys-icon-free-free-vector.jpg">
+                <div class="job-detail">
+                    <h4>Infosys</h4>
+                    <h3>Data Scientist</h3>
+                    <p>Loren ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="Job-label">   
+                <a class="label-a" href="#">ML</a>
+                <a class="label-b" href="#">AI</a>
+                <a class="label-c" href="#">SQL</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago 
+            </div>
+        </div>
+        <button class="job-more">More List</button>
+    </section>
+
+    
+    <!-- join -->
+    <section class="joinnnn">
+        <div class="join-detail">
+            <h2 class="section-title">LET'S START YOUR NEW JOB WITH US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. elit Iure laboriosam in suscipit at atque
+               reprehenderit esse quasi accusantium.</p>
+        </div>
+        <button class="join-button">Join Now</button>
+    </section>
+
+    <!-- featured company -->
+    <section class="featured" id="companies">
+        <h1 class="section-title">Featured Companies</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipicing elit. Nobis eum perferendis,nemo distinctio 
+        rediciendis eveniet.</p>
+        <div class="featured-wrapper">
+            <div class="featured-card">
+                <img class="featured-image" src="https://upload.wikimedia.org/wikipedia/commons/4/48/EBay_logo.png">
+                <p>Eday</p>
+                <button class="featured-button">View 2 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="https://img.freepik.com/premium-vector/tik-tok-logo_578229-290.jpg">
+                <p>Tiktok</p>
+                <button class="featured-button">View 2 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="https://logowik.com/content/uploads/images/899_youtube_2017logo.jpg">
+                <p>Youtube</p>
+                <button class="featured-button">View 4 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg">
+                <p>Amazon</p>
+                <button class="featured-button">View 3 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="https://1000logos.net/wp-content/uploads/2018/02/Font-Tesla-logo.jpg">
+                <p>Tesla</p>
+                <button class="featured-button">View 4 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="https://images.samsung.com/is/image/samsung/assets/in/about-us/brand/logo/mo/360_197_1.png?$FB_TYPE_B_PNG$">
+                <p>Samsung</p>
+                <button class="featured-button">View 6 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="https://storage.googleapis.com/gd-prod/images/a910d418-7123-4bc4-aa3b-ef7e25e74ae6.faa49ab5e1fff880.webp">
+                <p>Google</p>
+                <button class="featured-button">View 3 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="https://www.transparentpng.com/thumb/facebook-logo-png/png-facebook-logo-picture-11.png">
+                <p>Facebook</p>
+                <button class="featured-button">View 2 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="https://img.wallscloud.net/uploads/thumb/3378068484/apple-logo-black-and-wite-oVOA-1024x576-MM-80.webp">
+                <p>Apple</p>
+                <button class="featured-button">View 5 jobs</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
